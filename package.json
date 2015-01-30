@@ -1,0 +1,33 @@
+{
+  "name": "unindexed",
+  "version": "0.0.1",
+  "description": "A website the deletes itself once indexed by Google.",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "jshint *.js scripts/*.js",
+    "start": "node index.js",
+    "query": "node scripts/query.js",
+    "stats": "node scripts/stats.js",
+    "reset": "node scripts/reset.js"
+  },
+  "author": "Matthew Rothenberg <mroth@mroth.info>",
+  "license": "WTFPL",
+  "dependencies": {
+    "body-parser": "^1.10.1",
+    "ect": "^0.5.9",
+    "express": "^4.10.7",
+    "google": "^0.6.0",
+    "marked": "^0.3.2",
+    "redis": "^0.12.1",
+    "redis-url": "^0.3.1",
+    "sanitize-html": "^1.5.1"
+  },
+  "devDependencies": {
+    "dotenv": "^0.4.0"
+  },
+  "engines": {
+    "node": "0.10.x"
+  }
+}

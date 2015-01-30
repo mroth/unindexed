@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="If you're seeing this, I'm already gone.">
+    <meta name="robots" content="index,noarchive,nosnippet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <% include 'alive.css' %>
+</head>
+<body>
+<article class="container">
+
+    <main>
+      <%- @content %>
+    </main>
+
+    <hr>
+    <p>
+      This site was launched <%= @timeAlive %> ago
+      at <%= @createdAt %>
+      and has been visited <%= @liveVisitors %> times since then.
+
+      Current times it appears in the Google search index:
+      <strong><%= @timesIndexed %></strong>.
+    </p>
+
+    <hr>
+    <small>
+      <p>
+        Comments will be truncated beyond 2048 characters.
+        <strong>When the site goes, they all go with it.</strong>
+      </p>
+    </small>
+
+    <a name="comments-oldest"></a>
+    <ul>
+    <% for comment in @comments : %>
+      <li>
+        <article>
+        <%- comment.c %>
+        </article>
+        <footer>
+            <strong><%= comment.u %></strong> @<%= comment.t %>
+        </footer>
+      </li>
+    <% end %>
+    </ul>
+    <a name="comments-latest"></a>
+
+    <small>
+      <form action="/comments" method="POST">
+        <input type="text" name="user" placeholder="anonymous" maxlength=48><br>
+        <textarea name="comment"
+                  placeholder="Your comments. Basic formatting Markdown/HTML is accepted."
+                  maxlength=2048
+                  cols=78
+                  rows=8
+                  required></textarea><br>
+        <input type="submit" value="submit">
+      </form>
+    </small>
+</body>
+</html>

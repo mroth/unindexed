@@ -1,0 +1,55 @@
+<style>
+@import url(http://fonts.googleapis.com/css?family=Roboto:300,500);
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+/* restyle font base */
+main {
+  font-family: "Roboto";
+  font-size: 1.2em;
+  line-height: 1.6em;
+}
+main h1 {
+  font-weight: 500;
+  text-align: center;
+  line-height: 0.9em;
+}
+main h1 small {
+  font-size: 0.5em;
+}
+main p {
+  font-weight: 300;
+  margin-top: 1.4em;
+}
+
+/* but dont make it quite so big on mobile */
+@media (max-width: 767px) {
+  main {
+    font-size: 1.1em;
+  }
+  form textarea {
+    width: 100%;
+  }
+}
+
+/* comment styling */
+li {
+  font-family: "Roboto";
+  font-weight: 300;
+  margin-top: 1.0em;
+}
+li article p {
+  margin-bottom: 0.5em;
+}
+li article p:last-child {
+  margin-bottom: 0.2em;
+}
+li footer {
+  font-size: smaller;
+  font-style: italic;
+}
+</style>
