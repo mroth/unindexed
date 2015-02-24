@@ -40,8 +40,7 @@ If you want to conduct your own similar experiment, the source code is here.
 Sample configuration notes for running on Heroku:
 
     $ heroku create `pwgen -AnB 6 1` # generates a random hostname
-    $ heroku addons:add rediscloud   # need redis for basic functionality
-    $ heroku addons:add logentries   # better logging
+    $ heroku addons:add rediscloud   # default free tier disables backups
     $ heroku config:set REDIS_URL=`heroku config:get REDISCLOUD_URL`
     $ heroku config:set SITE_URL=`heroku domains | sed -ne "2,2p;2q"`
     $ git push heroku master
