@@ -82,7 +82,9 @@ require('./comments')(app, client);
 // allow all robot overlords (this is default, but more fun to be specific)
 app.get('/robots.txt', function (req, res) {
   res.type("text");
-  res.send("User-agent: *\nDisallow:\n");
+  res.write("User-agent: ia_archiver\nDisallow: /\n\n");
+  res.write("User-agent: *\nDisallow:\n");
+  res.end();
 });
 
 // for status pings
