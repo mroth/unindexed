@@ -18,7 +18,7 @@ If you want to conduct your own similar experiment, the source code is here.
 ## info
 
   - Nothing has been done to prevent the site from being indexed, however the
-    NOARCHIVE meta tag is specified which prevents the Googles from caching
+    NOARCHIVE meta tag is specified which instructs Google not to cache
     their own copy of the content.
 
   - The content for this site is stored in memory only (via Redis) and is loaded
