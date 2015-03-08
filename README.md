@@ -1,17 +1,17 @@
 # unindexed
-A website that irrevocably deletes itself once indexed by Google.
+> A website that irrevocably deletes itself once indexed by Google.
 
 The site is constantly searching for itself in Google, over and over and over, 24 hours a day. The instant it finds itself in Google search results, the site will instantaneously and irrevocably securely delete itself. Visitors can contribute to the public content of the site, these contributions will also be destroyed when the site deletes itself.
 
-Why would you do such a thing? The full explanation is in the content of the site
-(which is not linked anywhere here).
+**Why would you do such a thing?** My full explanation was in the content of the site.
+_(edit: ...which is now gone)_
 
 ![card](http://f.cl.ly/items/0Q3t120C0f1f3N1Q0416/unindexed_invite_blurred_sm.jpg)
 
-UPDATE: The experiment lasted 22 days before it was indexed by Google on 24 February 2015 at 21:01:14 and instantaneously destroyed.  It was primarily shared via physical means in the real world, word of mouth, etc.
+**UPDATE: The experiment lasted 22 days before it was indexed by Google on 24 February 2015 at 21:01:14 and instantaneously destroyed.  It was primarily shared via physical means in the real world, word of mouth, etc.**
 
-If you didn't find it before it went away,
-[you can maybe watch this instead.](https://www.youtube.com/watch?v=qqmNaOn56mc)
+If you didn't find it before it went away, you can see some of my other projects on [my portfolio](http://portfolio.mroth.info), 
+or [maybe just watch this instead.](https://www.youtube.com/watch?v=qqmNaOn56mc)
 
 If you want to conduct your own similar experiment, the source code is here.
 
